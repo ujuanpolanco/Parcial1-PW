@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mision, vision y equipo de trabajo">
+    <title>Nosotros | InfoDiario</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+            <div class="container">
+                <a class="navbar-brand fw-bold" href="index.html">InfoDiario</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"
+                    aria-controls="navMenu" aria-expanded="false" aria-label="Alternar navegacion">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navMenu">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Noticias</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="admin.html">Admin</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="signup.html">Sign Up</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle active" href="about.html" id="aboutDropdown"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                About
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
+                                <li><a class="dropdown-item" href="about.html#mision">Mision</a></li>
+                                <li><a class="dropdown-item" href="about.html#vision">Vision</a></li>
+                                <li><a class="dropdown-item" href="about.html#equipo">Equipo de trabajo</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search" id="searchForm">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"
+                            id="searchInput">
+                        <button class="btn btn-outline-light" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="mision" class="about-section py-5">
+            <div class="container">
+                <div class="row g-4 align-items-center">
+                    <div class="col-md-5">
+                        <img src="https://picsum.photos/seed/mision/500/350" class="img-fluid rounded shadow-sm"
+                            alt="Equipo trabajando en la mision de InfoDiario">
+                    </div>
+                    <div class="col-md-7">
+                        <h2>Mision</h2>
+                        <p class="texto-editable">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+                            maximus, nulla ut commodo sagittis, sapien dui mattis dui, non pulvinar lorem felis
+                            nec erat. Trabajamos cada dia para acercar informacion clara y verificada a nuestros
+                            lectores, con rigor periodistico y compromiso con la verdad.</p>
+                        <div class="d-flex gap-2 flex-wrap">
+                            <button type="button" class="btn btn-outline-secondary btn-tamano-letra">Cambiar
+                                tamano de letra</button>
+                            <button type="button" class="btn btn-outline-secondary btn-color-letra">Cambiar
+                                color de letra</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="vision" class="about-section d-none py-5 bg-light">
+            <div class="container">
+                <div class="row g-4 align-items-center">
+                    <div class="col-md-5">
+                        <img src="https://picsum.photos/seed/vision/500/350" class="img-fluid rounded shadow-sm"
+                            alt="Vision de InfoDiario a futuro">
+                    </div>
+                    <div class="col-md-7">
+                        <h2>Vision</h2>
+                        <p class="texto-editable">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+                            ut commodo sagittis, sapien dui mattis dui. Aspiramos a ser el medio digital de
+                            referencia en la region, reconocido por la calidad de sus contenidos y por acercar
+                            la actualidad nacional e internacional a cada lector.</p>
+                        <div class="d-flex gap-2 flex-wrap">
+                            <button type="button" class="btn btn-outline-secondary btn-tamano-letra">Cambiar
+                                tamano de letra</button>
+                            <button type="button" class="btn btn-outline-secondary btn-color-letra">Cambiar
+                                color de letra</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="equipo" class="about-section d-none py-5 bg-dark text-white">
+            <div class="container">
+                <h2 class="text-center mb-4">Nuestro equipo</h2>
+                <div id="carouselEquipo" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselEquipo" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Integrante 1"></button>
+                        <button type="button" data-bs-target="#carouselEquipo" data-bs-slide-to="1"
+                            aria-label="Integrante 2"></button>
+                        <button type="button" data-bs-target="#carouselEquipo" data-bs-slide-to="2"
+                            aria-label="Integrante 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row justify-content-center align-items-center g-4 px-4 pb-5">
+                                <div class="col-md-4 text-center">
+                                    <img src="https://picsum.photos/seed/equipo1/300/300"
+                                        class="rounded-circle foto-equipo" alt="Maria Fernanda Rojas">
+                                </div>
+                                <div class="col-md-6">
+                                    <h3>Maria Fernanda Rojas</h3>
+                                    <p class="text-uppercase text-secondary mb-2">Editora en jefe</p>
+                                    <p>Periodista con mas de 10 anios de experiencia cubriendo actualidad
+                                        nacional e internacional.</p>
+                                    <div class="d-flex gap-3 fs-4">
+                                        <a href="https://facebook.com" target="_blank" rel="noopener"
+                                            class="text-white" aria-label="Facebook"><i
+                                                class="bi bi-facebook"></i></a>
+                                        <a href="https://twitter.com" target="_blank" rel="noopener"
+                                            class="text-white" aria-label="Twitter"><i
+                                                class="bi bi-twitter-x"></i></a>
+                                        <a href="https://linkedin.com" target="_blank" rel="noopener"
+                                            class="text-white" aria-label="LinkedIn"><i
+                                                class="bi bi-linkedin"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row justify-content-center align-items-center g-4 px-4 pb-5">
+                                <div class="col-md-4 text-center">
+                                    <img src="https://i.pinimg.com/736x/9b/9f/75/9b9f752fc3b658076e6b8ebc454f3819.jpg"
+                                        class="rounded-circle foto-equipo" alt="Tony Stark">
+                                </div>
+                                <div class="col-md-6">
+                                    <h3>Tony Stark</h3>
+                                    <p class="text-uppercase text-secondary mb-2">Desarrollador web</p>
+                                    <p>Encargado de mantener la plataforma digital y mejorar la experiencia de
+                                        los lectores.</p>
+                                    <div class="d-flex gap-3 fs-4">
+                                        <a href="https://facebook.com" target="_blank" rel="noopener"
+                                            class="text-white" aria-label="Facebook"><i
+                                                class="bi bi-facebook"></i></a>
+                                        <a href="https://twitter.com" target="_blank" rel="noopener"
+                                            class="text-white" aria-label="Twitter"><i
+                                                class="bi bi-twitter-x"></i></a>
+                                        <a href="https://linkedin.com" target="_blank" rel="noopener"
+                                            class="text-white" aria-label="LinkedIn"><i
+                                                class="bi bi-linkedin"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row justify-content-center align-items-center g-4 px-4 pb-5">
+                                <div class="col-md-4 text-center">
+                                    <img src="https://picsum.photos/seed/equipo3/300/300"
+                                        class="rounded-circle foto-equipo" alt="Laura Camila Perez">
+                                </div>
+                                <div class="col-md-6">
+                                    <h3>Laura Camila Perez</h3>
+                                    <p class="text-uppercase text-secondary mb-2">Community manager</p>
+                                    <p>Gestiona las redes sociales del medio y la relacion con la comunidad de
+                                        lectores.</p>
+                                    <div class="d-flex gap-3 fs-4">
+                                        <a href="https://facebook.com" target="_blank" rel="noopener"
+                                            class="text-white" aria-label="Facebook"><i
+                                                class="bi bi-facebook"></i></a>
+                                        <a href="https://twitter.com" target="_blank" rel="noopener"
+                                            class="text-white" aria-label="Twitter"><i
+                                                class="bi bi-twitter-x"></i></a>
+                                        <a href="https://linkedin.com" target="_blank" rel="noopener"
+                                            class="text-white" aria-label="LinkedIn"><i
+                                                class="bi bi-linkedin"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselEquipo"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Anterior</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselEquipo"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Siguiente</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <div class="container">
+            <p class="mb-0">&copy; 2026 InfoDiario</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

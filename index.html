@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portal de noticias nacionales e internacionales">
+    <title>Noticias | InfoDiario</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+            <div class="container">
+                <a class="navbar-brand fw-bold" href="index.html">InfoDiario</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"
+                    aria-controls="navMenu" aria-expanded="false" aria-label="Alternar navegacion">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navMenu">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Noticias</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="admin.html">Admin</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="signup.html">Sign Up</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="about.html" id="aboutDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                About
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
+                                <li><a class="dropdown-item" href="about.html#mision">Mision</a></li>
+                                <li><a class="dropdown-item" href="about.html#vision">Vision</a></li>
+                                <li><a class="dropdown-item" href="about.html#equipo">Equipo de trabajo</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search" id="searchForm">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"
+                            id="searchInput">
+                        <button class="btn btn-outline-light" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="container py-5">
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">Colombia impulsa la transicion energetica con nuevos proyectos
+                                solares</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Descripcion</h6>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+                                maximus, nulla ut commodo sagittis.</p>
+                        </div>
+                        <img src="https://picsum.photos/seed/noticia1/500/300" class="card-img-noticia"
+                            alt="Proyectos de energia solar en Colombia">
+                        <div class="card-body">
+                            <a href="https://www.eltiempo.com" target="_blank" rel="noopener"
+                                class="btn btn-primary">Leer completa</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">La inteligencia artificial transforma la educacion superior en
+                                Latinoamerica</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Descripcion</h6>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sapien
+                                dui mattis dui, non pulvinar lorem felis nec erat.</p>
+                        </div>
+                        <img src="https://picsum.photos/seed/noticia2/500/300" class="card-img-noticia"
+                            alt="Inteligencia artificial en la educacion">
+                        <div class="card-body">
+                            <a href="https://www.bbc.com/mundo" target="_blank" rel="noopener"
+                                class="btn btn-primary">Leer completa</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">La Seleccion Colombia se prepara para el proximo torneo
+                                internacional</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Descripcion</h6>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+                                ut commodo sagittis, sapien dui mattis dui.</p>
+                        </div>
+                        <img src="https://picsum.photos/seed/noticia3/500/300" class="card-img-noticia"
+                            alt="Seleccion Colombia de futbol">
+                        <div class="card-body">
+                            <a href="https://www.espn.com.co" target="_blank" rel="noopener"
+                                class="btn btn-primary">Leer completa</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container pb-5">
+            <hr>
+            <h5 class="text-center mb-4">Otras paginas de noticias..</h5>
+            <div class="border rounded p-4">
+                <table class="table table-borderless mb-0">
+                    <thead>
+                        <tr>
+                            <th class="text-center">NACIONALES</th>
+                            <th class="text-center">INTERNACIONALES</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <ul class="list-unstyled mb-0">
+                                    <li class="fw-bold">Bogota</li>
+                                    <li class="ps-3"><a href="https://www.eltiempo.com" target="_blank"
+                                            rel="noopener">El Tiempo</a></li>
+                                    <li class="ps-3"><a href="https://www.elespectador.com" target="_blank"
+                                            rel="noopener">El Espectador</a></li>
+                                    <li class="fw-bold mt-2">Neiva</li>
+                                    <li class="ps-3"><a href="https://www.lanacion.com.co" target="_blank"
+                                            rel="noopener">La Nacion</a></li>
+                                    <li class="ps-3"><a href="https://www.diariodelhuila.com" target="_blank"
+                                            rel="noopener">El Diario del Huila</a></li>
+                                </ul>
+                            </td>
+                            <td>
+                                <ul class="list-unstyled mb-0">
+                                    <li class="fw-bold">EE.UU</li>
+                                    <li class="ps-3"><a href="https://www.nytimes.com" target="_blank"
+                                            rel="noopener">The New York Times</a></li>
+                                    <li class="ps-3"><a href="https://www.latimes.com" target="_blank"
+                                            rel="noopener">Los Angeles Times</a></li>
+                                    <li class="fw-bold mt-2">Argentina</li>
+                                    <li class="ps-3"><a href="https://www.lanacion.com.ar" target="_blank"
+                                            rel="noopener">La Nacion</a></li>
+                                    <li class="ps-3"><a href="https://www.clarin.com" target="_blank"
+                                            rel="noopener">El Clarin</a></li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <div class="container">
+            <p class="mb-0">&copy; 2026 InfoDiario</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
